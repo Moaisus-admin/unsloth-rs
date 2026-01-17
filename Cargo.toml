@@ -2,6 +2,12 @@
 name = "unsloth_rs"
 version = "0.1.0"
 edition = "2021"
+description = "Fast, efficient implementation of Unsloth optimization kernels and training loop in Rust."
+license = "Apache-2.0"
+repository = "https://github.com/Moaisus-admin/unsloth-rs"
+keywords = ["machine-learning", "llm", "lora", "optimization", "cuda"]
+categories = ["science"]
+readme = "README.md"
 
 [lib]
 name = "unsloth_rs"
