@@ -1,5 +1,5 @@
 [package]
-name = "unsloth_rs"
+name = "unsloth-rs-core"
 version = "0.1.0"
 edition = "2021"
 description = "Fast, efficient implementation of Unsloth optimization kernels and training loop in Rust."
