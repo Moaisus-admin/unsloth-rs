@@ -1,4 +1,6 @@
 use pyo3::prelude::*;
+use pyo3::types::PyModule;
+use pyo3::Bound;
 use crate::models::llama::FastLlamaModel;
 use crate::trainer::{UnslothTrainer, UnslothTrainingArguments};
 use serde_json::json;
@@ -116,7 +118,7 @@ impl PyUnslothTrainer {
 }
 
 #[pymodule]
-fn unsloth_rs(_py: Python, m: &PyModule) -> PyResult<()> {
+fn unsloth_rs(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_class::<PyFastLlamaModel>()?;
     m.add_class::<PyUnslothTrainer>()?;
     Ok(())
